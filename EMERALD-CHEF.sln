@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMERALD-CHEF.Api", "EMERALD-CHEF.Api\EMERALD-CHEF.Api.csproj", "{96235F36-E9E1-48ED-BCE7-49BAC9407B5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMERALD-CHEF.Domain", "EMERALD-CHEF.Domain\EMERALD-CHEF.Domain.csproj", "{7FFF3420-58AE-4407-8BB9-FD8D52AD96B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96235F36-E9E1-48ED-BCE7-49BAC9407B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96235F36-E9E1-48ED-BCE7-49BAC9407B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96235F36-E9E1-48ED-BCE7-49BAC9407B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96235F36-E9E1-48ED-BCE7-49BAC9407B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FFF3420-58AE-4407-8BB9-FD8D52AD96B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FFF3420-58AE-4407-8BB9-FD8D52AD96B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FFF3420-58AE-4407-8BB9-FD8D52AD96B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FFF3420-58AE-4407-8BB9-FD8D52AD96B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
