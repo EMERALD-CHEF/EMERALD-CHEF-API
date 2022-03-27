@@ -1,0 +1,54 @@
+### GETS ALL ITEMS ON HTTPS
+GET https://localhost:7248/catalog
+
+### GETS ALL ITEMS ON HTTP
+GET http://localhost:5206/catalog
+
+### GETS ITEM WITH ID = 42
+GET https://localhost:7248/catalog/42
+
+
+### POSTS NEW ITEM
+POST https://localhost:7248/catalog
+Content-Type: application/json
+
+{
+    "id": 42,
+    "name": "Shoes",
+    "description": "Ohio State Shoes.",
+    "brand": "Nike",
+    "price": 129.99
+}
+
+### POSTS RATING FOR ITEM WHERE ID = 42
+POST https://localhost:7248/catalog/42/ratings
+Content-Type: application/json
+
+{
+  "stars" : 5,
+  "userName": "user1234",
+  "review": "good"
+}
+
+### PUTS ITEM WHERE ID = 42
+PUT https://localhost:7248/catalog/42
+Content-Type: application/json
+
+{
+  "id": 42,
+  "name": "Shoes",
+    "description": "Ohio State Shoes.",
+    "brand": "Nike",
+    "price": 109.99,
+    "ratings": [
+    {
+      "stars" : 5,
+      "userName": "user1234",
+      "review": "good"
+    }
+  ]
+}
+
+
+### DELETES ITEM WHERE ID = 42
+DELETE https://localhost:7248/catalog/42
