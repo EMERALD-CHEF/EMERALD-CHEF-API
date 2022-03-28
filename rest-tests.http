@@ -20,7 +20,7 @@ Content-Type: application/json
 }
 
 ### POSTS RATING FOR ITEM WHERE ID = 42
-POST https://localhost:7248/catalog/2/ratings
+POST https://localhost:7248/catalog/42/ratings
 Content-Type: application/json
 
 {
