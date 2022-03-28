@@ -13,11 +13,10 @@ POST https://localhost:7248/catalog
 Content-Type: application/json
 
 {
-    "id": 42,
     "name": "Shoes",
-    "description": "Ohio State Shoes.",
+    "description": "Running Shoes",
     "brand": "Nike",
-    "price": 129.99
+    "price": 109.99
 }
 
 ### POSTS RATING FOR ITEM WHERE ID = 42
