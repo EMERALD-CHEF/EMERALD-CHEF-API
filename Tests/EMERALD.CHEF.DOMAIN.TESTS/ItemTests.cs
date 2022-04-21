@@ -2,8 +2,8 @@ using System;
 using EMERALD.CHEF.Domain.Catalog;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace EMERALD.CHEF.DOMAIN.TESTS;
-//maybe { after namespace and then this } at very end of code
+namespace EMERALD.CHEF.DOMAIN.TESTS {
+  
 [TestClass]
 public class ItemTests
 {
@@ -28,4 +28,5 @@ public class ItemTests
       Assert.AreEqual(rating, item.Ratings[0]);
       
   } 
+}
 }

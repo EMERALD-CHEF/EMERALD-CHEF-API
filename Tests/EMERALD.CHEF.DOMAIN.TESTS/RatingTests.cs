@@ -2,7 +2,7 @@ using System;
 using EMERALD.CHEF.Domain.Catalog;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace EMERALD.CHEF.DOMAIN.TESTS;
+namespace EMERALD.CHEF.DOMAIN.TESTS{
 //maybe { after namespace and then this } at very end of code
 
 [TestClass]
@@ -30,4 +30,4 @@ public class RatingTests
         var rating = new Rating (0, "Mike", "Great fit!");
     }
 }
-
+}
