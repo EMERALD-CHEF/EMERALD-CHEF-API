@@ -51,3 +51,14 @@ Content-Type: application/json
 
 ### DELETES ITEM WHERE ID = 42
 DELETE https://localhost:7248/catalog/42
+
+### GET TOKEN FROM AUTH0
+curl --request POST \
+  --url https://dev-ueu6kgc7.us.auth0.com/oauth/token \
+  --header 'content-type: application/json' \
+  --data '{"client_id":"gN8lIyhQHBRV1gioN06A0kKiE4qgCAsX","client_secret":"ScSrYPoMugQ1OhfdSz5GiP5V5SypSAKDTw4aWWo5h2Cd-tYDAW6qo_FZbVg4YvmY","audience":"https://emerald-chef","grant_type":"client_credentials"}'
+
+### DELETE a item to catalog
+curl --request DELETE \
+  --url https://localhost:7248/catalog/3 \
+  --header 'authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImVBWWlPcW03Z00xelJlWjNvLVJJcSJ9.eyJpc3MiOiJodHRwczovL2Rldi11ZXU2a2djNy51cy5hdXRoMC5jb20vIiwic3ViIjoiZ044bEl5aFFIQlJWMWdpb04wNkEwa0tpRTRxZ0NBc1hAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vZW1lcmFsZC1jaGVmIiwiaWF0IjoxNjUwNjQ2NTA5LCJleHAiOjE2NTA3MzI5MDksImF6cCI6ImdOOGxJeWhRSEJSVjFnaW9OMDZBMGtLaUU0cWdDQXNYIiwic2NvcGUiOiJkZWxldGU6Y2F0YWxvZyIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyJ9.WbcQMep45dVjTKM8-IZIXLZOYNNMvCDdqTg2abn96lO3TcPHALcumZzaF4WMkir6H4Qx6uIg3VIE4SURBoogIWNjRDv4jMHymAaeGR5IfTIxvt8RZ-3nrcWB_RDj5Hi5j8UMn2fWNuDw57rC473CEBkEInUVXsJk0RLnbbjSVQV9VPF8_LQD-iHPZuGnS9XLaYQUS283a3YRHB8sWUHwFqY6SLZXfcFUcM7Gaq_KMfeNlvKeB1JBn4bN7XNKFaqUllI6eNFvkixFNPsXk7rXTM_6dkxIgxiNRuMoJ_4P9nEm6oe-MFY8FBs-dyF7a4zhTe5xAsdMD_aGdi-oApAZeg'

@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using EMERALD.CHEF.Domain.Catalog;
 using EMERALD.CHEF.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EMERALD.CHEF.Api.Controllers
 {
@@ -76,6 +77,7 @@ namespace EMERALD.CHEF.Api.Controllers
         }
 
         [HttpDelete("{id:int}")]
+        [Authorize("delete:catalog")]
         public IActionResult DeleteItem(int id)
         {
             var item = _db.Items.Find(id);
