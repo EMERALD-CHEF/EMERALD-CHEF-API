@@ -39,6 +39,7 @@ builder.Services.AddDbContext<StoreContext>(options =>
     options.UseSqlServer(storeConnectionString,
     b => b.MigrationsAssembly("EMERALD.CHEF.Api"))
 );
+// adding comment to test empty commit
 builder.Services.AddCors(options => {
     options.AddDefaultPolicy(builder => {
         builder.WithOrigins("http://localhost:3000")
