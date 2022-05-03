@@ -1,4 +1,5 @@
 ### GETS ALL ITEMS ON HTTPS
+#ignore this comment
 GET https://localhost:7248/catalog
 
 ### GETS ALL ITEMS ON HTTP
